@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogging Website</title>
+    <!-- Correct Font Awesome CDN for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Linking CSS file -->
+    <link rel="stylesheet" href="C:/Users/ghnhn/Desktop/blogging website/frontend/CSS/blogging.css">
+    <link rel="stylesheet" href="C:/Users/ghnhn/Desktop/blogging website/frontend/CSS/media query.css">
+</head>
+<body>
+    <nav class="mode">
+            <button class="hamburger"><b>☰</b></button>
+        <ul class="sidebar">
+        <ul class="submenu">
+            <li>
+                <a href="#Home"><b>Home</b></a>
+                <ul class="dropdown">
+                    <li><a href="#Python"><b>Python</b></a></li>
+                    <li><a href="#java"><b>Java</b></a></li>
+                    <li><a href="#C++"><b>C++</b></a></li>
+                </ul>
+            </li>
+        </ul>    
+                <ul class="subclass">
+                    <li>
+                    <a href="#News"><b>News</b></a>
+                    <ul class="dropdown-second">
+                        <li><a href="#Scienctist"><b>Scienctist</b></a></li>
+                        <li><a href="#Programming"><b>Programming</b></a></li>
+                        <li><a href="#Accident"><b>Accident</b></a></li>
+                    </ul>
+                    </li>
+                </ul>
+                <ul class="sub">
+                    <li>
+                    <a href="#Articles"><b>Articles</b></a>
+                    <ul class="dropdown-third">
+                        <li><a href="#Hockey"><b>Hockey</b></a></li>
+                        <li><a href="#Football"><b>Football</b></a></li>
+                        <li><a href="#Cricket"><b>Cricket</b></a></li>
+                    </ul>
+                    </li>
+                </ul> 
+                <ul class="subs">
+                    <li>
+                        <a href="#Tutorials"><b>Tutorials</b></a>
+                        <ul class="dropdown-four">
+                            <li><a href="#Data Structure"><b>Data Structure</b></a></li>
+                            <li><a href="#My SQL"><b>My SQL</b></a></li>
+                            <li><a href="#JQUERY"><b>JQUERY</b></a></li>
+                        </ul>
+                    </li>
+                </ul> 
+                <ul class="subes">
+                    <li>
+                        <a href="Contest"><b>Contest</b></a>
+                        <ul class="dropdown-five">
+                            <li><a href="#Cyber Security"><b>Cyber Security</b></a></li>
+                            <li><a href="#React"><b>React</b></a></li>
+                            <li><a href="#Nodejs"><b>Nodejs</b></a></li>
+                        </ul>
+                    </li>
+                </ul>
+        </ul>
+                <img class="logo" src="C:\Users\ghnhn\Pictures\Saved Pictures\web logo1.png" alt="Website Logo" width="100px" height="40px"> 
+                <form action="search" method="get" class="search-form">
+                    <button type="submit" class="bsearch">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+        <div class="container">
+            <button id="mode-toggle">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+        <div class="Sign">
+            <button id="signup-out">Sign up</button>
+        </div>
+    </nav>
+
+    <nav class="navigation">
+        <a href="#C"><b>C language</b></a>
+        <a href="#C++"><b>C++</b></a>
+        <a href="#Python"><b>Python</b></a>
+        <a href="#Java"><b>Java</b></a>
+        <a href="#React"><b>React</b></a>
+        <a href="#Node js"><b>Node js</b></a>
+        <a href="#HTML"><b>HTML</b></a>
+        <a href="#CSS"><b>CSS</b></a>
+        <a href="#JAVASCRIPT"><b>JavaScript</b></a>
+        <a href="#JQUERY"><b>JQUERY</b></a>
+        <a href="#DATA STRUCTURE"><b>DATA STRUCTURE</b></a>
+        <a href="#ARTIFICIAL INTELLEGENCE"><b>ARTIFICIAL INTELLEGENCE</b></a>
+        <a href="#NETWORKING"><b>NETWORKING</b></a>
+        <a href="#PHP"><b>PHP</b></a>
+        <a href="#DATA SCIENCE"><b>DATA SCIENCE</b></a>
+        <a href="#SYSTEM DESIGN"><b>SYSTEM DESIGN</b></a>
+        <a href="#DJANGO"><b>DJANGO</b></a>
+    </nav>
+
+    <!-- Sign Up Popup -->
+    <div class="popup-overlay" id="signup-popup">
+        <div class="popup">
+            <button class="close-btn" id="close-popup">&times;</button>
+            <h2>Sign Up</h2>
+            <form action="submit-login" method="POST">
+                <div class="form-group-1">
+                    <input type="email" id="email" name="email" placeholder="Email" required style="width: 400px; height: 50px">
+                </div>
+                <div class="form-group-2">
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required style="width: 400px; height: 50px">
+                </div>
+                <button type="submit" class="forget-password">Forget Password? <style width: 100px; height: 50px;></style></button>
+                <button type="submit" class="login-button">Login</button>
+            </form>
+            <div class="social-buttons">
+                <div class="social-button google">Google</div>
+                <div class="social-button facebook">Facebook</div>
+                <div class="social-button linkedin">LinkedIn</div>
+                <div class="social-button github">GitHub</div>
+            </div>
+            <div class="create-account">
+                <p>Don't have an account? <a href="/signup">Create an account</a></p>
+            </div>
+        </div>
+    </div>
+    <H1>WHAT DO YOU WANT TO LEARN TODAY?</H1>
+
+    <span class="search-form-2">
+        <input type="text" id="Searchinput" placeholder="  Search here...">
+        <button id="emoji">
+            <i class="fas fa-search"></i>
+        </button>
+    </span>
+
+    <h3><b>Courses</b></h3>
+
+    <span class="course-container">
+        <div class="course-1">
+          <img src="C:\Users\ghnhn\Desktop\blogging website\image\course1.png" alt="Course 1" width="290px" height="162px">
+          <h2>C Language</h2>
+          <p>Learn and Inhence our Skills</p>
+          <a href="#" class="btn">Enroll Now</a>
+        </div>
+        <div class="course-2">
+            <img src="C:\Users\ghnhn\Desktop\blogging website\image\course2.png" alt="Course 2" width="290px" height="162px">
+            <h2>Java Language</h2>
+            <p>Learn and Inhence our Skills</p>
+            <a href="#" class="btn">Enroll Now</a>
+          </div>
+          <div class="course-3">
+            <img src="C:\Users\ghnhn\Desktop\blogging website\image\course3.png" alt="Course 3" width="290px" height="162px" >
+            <h2>C++ Language</h2>
+            <p>Learn and Inhence our Skills</p>
+            <a href="#" class="btn">Enroll Now</a>
+          </div>
+          <div class="course-4">
+            <img src="C:\Users\ghnhn\Desktop\blogging website\image\course4.png" alt="Course 4" width="290px" height="162px">
+            <h2>Python</h2>
+            <p>Learn and Inhence our Skills</p>
+            <a href="#" class="btn">Enroll Now</a>
+          </div>
+          <div class="course-5">
+              <img src="C:\Users\ghnhn\Desktop\blogging website\image\course5.png" alt="Course 5" width="290px" height="162px">
+              <h2>JavaScript</h2>
+              <p>Learn and Inhence our Skills</p>
+              <a href="#" class="btn">Enroll Now</a>
+            </div>
+            <div class="course-6">
+              <img src="C:\Users\ghnhn\Desktop\blogging website\image\course6.png" alt="Course 6" width="290px" height="162px" >
+              <h2>C#</h2>
+              <p>Learn and Inhence our Skills</p>
+              <a href="#" class="btn">Enroll Now</a>
+            </div>
+        </span>
+
+
+
+    <span class="Programming-Language"><b>Programming Language</b></span>
+
+    <span class="course-container-3">
+        <span class="course-7">
+            <span class="ds">Data Structure and Algorithm</span>
+            <a href="#" class="btn">Enroll Now</a>
+        </span>
+        <span class="course-8">
+            <span class="ai">Artificial Intellegence</span>
+            <a href="#" class="btn">Enroll Now</a>
+        </span>
+        <span class="course-9">
+            <span class="nj">NODE JS</span>
+            <a href="#" class="btn">Enroll Now</a>
+        </span>
+        <span class="course-10">
+            <span class="jq">JQuery</span>
+            <a href="#" class="btn">Enroll Now</a>
+        </span>
+        <span class="course-11">
+            <span class="nw">NETWORKING</span>
+            <a href="#" class="btn">Enroll Now</a>
+        </span>
+        <span class="course-12">
+            <span class="d">Data Science</span>
+            <a href="#" class="btn">Enroll Now</a>
+        </span>
+    </span>
+
+    <span class="wb"><b>Web Development</b></span>
+
+    <span class="course-container-4">
+        <a href="#" class="btn-1"><b>HTML</b></a>
+        <a href="#" class="btn-2"><b>CSS</b></a>
+        <a href="#" class="btn-3"><b>JAVASCRIPT</b></a>
+        <a href="#" class="btn-4"><b>React JS</b></a>
+        <a href="#" class="btn-5"><b>Next JS</b></a>
+        <a href="#" class="btn-6"><b>HUBL</b></a>
+        <a href="#" class="btn-7"><b>Frontend</b></a>
+        <a href="#" class="btn-8"><b>Backend</b></a>
+    </span>
+
+    <span class="footer-container">
+        <span class="about"><b>About us</b></span>
+        <ul class="footer-list">
+            <li class="pl">System Design</li>
+            <ul class="foot">
+                <li><a href="c">High Level Design</a></li>
+                <li><a href="C++">Low Level Design</a></li>
+                <li><a href="PYthon">UML Diagrams</a></li>
+                <li><a href="JAVA">Interview Guide</a></li>
+                <li><a href="php">Design Patterns</a></li>
+                <li><a href="ANdroid">OOAD</a></li>
+                <li><a href="Kotlin">System Design Bootcamp</a></li>
+                <li><a href="Kotlin">Interview Questions</a></li>
+            </ul>
+        </ul>
+        <ul class="footer-list-1">
+            <li class="pl">Programming Language</li>
+            <ul class="foot-1">
+                <li><a href="c">C</a></li>
+                <li><a href="C++">C++</a></li>
+                <li><a href="PYthon">Python</a></li>
+                <li><a href="JAVA">Java</a></li>
+                <li><a href="php">PHP</a></li>
+                <li><a href="ANdroid">Android Tutorial</a></li>
+                <li><a href="Kotlin">Kotlin</a></li>
+            </ul>
+        </ul>
+        <ul class="footer-list-2">
+            <li class="pl">Web Development</li>
+            <ul class="foot-2">
+                <li><a href="c">HTML</a></li>
+                <li><a href="C++">CSS</a></li>
+                <li><a href="PYthon">JAVASCRIPT</a></li>
+                <li><a href="JAVA">HUBLs</a></li>
+                <li><a href="php">Next js</a></li>
+                <li><a href="ANdroid">React js</a></li>
+                <li><a href="Kotlin">Backend</a></li>
+                <li><a href="Kotlin">Backend</a></li>
+            </ul>
+        </ul>
+        <ul class="footer-list-3">
+            <li class="pl">DSA</li>
+            <ul class="foot-3">
+                <li><a href="">Data Structure</a></li>
+                <li><a href="">Algorithm</a></li>
+                <li><a href="">DSA for Beginners</a></li>
+                <li><a href="">Basic DSA Problem</a></li>
+                <li><a href="">DSA Roadmaps</a></li>
+                <li><a href="">DSA interview Question</a></li>
+                <li><a href="">Competitive Programming</a></li>
+            </ul>
+        </ul>
+        <ul class="footer-list-4">
+            <li class="pl">Data Science & ML</li>
+            <ul class="foot-4">
+                <li><a href="">Data Science With Python</a></li>
+                <li><a href="">Data Science For Beginner</a></li>
+                <li><a href="">Machine Learning</a></li>
+                <li><a href="">ML Maths</a></li>
+                <li><a href="">Data Visualisation</a></li>
+                <li><a href="">Pandas</a></li>
+                <li><a href="">NumPy</a></li>
+                <li><a href="">NLP</a></li>
+                <li><a href="">Deep Learning</a></li>
+            </ul>
+        </ul>
+        <ul class="footer-list-5">
+            <li class="pl">Databases</li>
+            <ul class="foot-5">
+                <li><a href="">SQL</a></li>
+                <li><a href="">MYSQL</a></li>
+                <li><a href="">PostgreSQL</a></li>
+                <li><a href="">PL/SQL</a></li>
+                <li><a href="">MongoDB</a></li>
+            </ul>
+        </ul>
+        <ul class="footer-list-6">
+            <li class="pl">Computer Science</li>
+            <ul class="foot-6">
+                <li><a href="">GATE CS Notes</a></li>
+                <li><a href="">Operating Systems</a></li>
+                <li><a href="">Computer Network</a></li>
+                <li><a href="">Database Management System</a></li>
+                <li><a href="">Software Engineering</a></li>
+                <li><a href="">Digital Logic Design</a></li>
+                <li><a href="">Engineering Maths</a></li>
+            </ul>
+        </ul>
+    </span>
+
+    <div class="gsk"><b>GSK</b></div>
+
+    <script src="C:/Users/ghnhn/Desktop/blogging website/frontend/javascript/script.js"></script>
+    <script>
+        // Get elements
+        const signupButton = document.getElementById('signup-out');
+        const popup = document.getElementById('signup-popup');
+        const closeButton = document.getElementById('close-popup');
+
+        // Show popup on button click
+        signupButton.addEventListener('click', () => {
+            popup.style.display = 'flex';
+        });
+
+        // Hide popup on close button click
+        closeButton.addEventListener('click', () => {
+            popup.style.display = 'none';
+        });
+
+        // Hide popup on outside click
+        window.addEventListener('click', (event) => {
+            if (event.target === popup) {
+                popup.style.display = 'none';
+            }
+        });
+        document.addEventListener("DOMContentLoaded", () => {
+        const toggleButton = document.querySelector("mode-toggle");
+        toggleButton.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+        });
+    });
+    </script>
+</body>
+</html>
